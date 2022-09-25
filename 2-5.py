@@ -1,5 +1,6 @@
 # Реализуйте алгоритм перемешивания списка.
 from random import randint
+
 a_lenght = int(input("Введите длину списка: "))
 a = []
 for i in range(a_lenght):
