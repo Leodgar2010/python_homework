@@ -7,9 +7,9 @@
 a = (input("Введите число: "))
 i = len(a)
 x = 0
-while i!=0:
-    i= i-1
+while i != 0:
+    i = i - 1
     if a[i] == ".":
         break
-    x += int (a[i])
-print (x)
+    x += int(a[i])
+print(x)

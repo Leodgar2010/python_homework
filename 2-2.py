@@ -6,10 +6,10 @@
 a = int(input("Введите число: "))
 list = []
 count = 0
-for i in range(1,a+1):
+for i in range(1, a + 1):
     if i == 1:
         list.append(i)
     else:
-        list.append(i*list [count-1])
+        list.append(i * list[count - 1])
     count += 1
 print(list)

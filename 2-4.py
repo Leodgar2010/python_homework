@@ -2,6 +2,8 @@
 #  заполненных числами из промежутка [-N, N]. 
 #  Найдите произведение элементов на указанных позициях. 
 #  Позиции хранятся в файле file.txt в одной строке одно число.
+import os
+
 n = int(input("Введите число: "))
 list = []
 for i in range(-n, n):
@@ -13,6 +15,7 @@ a.write("\n")
 a.write(input("Введите вторую позицию: "))
 a.close()
 a = open('file.txt', 'r')
-print("Число на первой позиции: ", (list[int (a.read (1))]))
-print("Число на второй позиции: ", (list[int (a.read (3))]))
+print("Число на первой позиции: ", (list[int(a.read(1))]))
+print("Число на второй позиции: ", (list[int(a.read(3))]))
 a.close()
+# os.remove("file.txt")
