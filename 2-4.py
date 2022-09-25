@@ -4,7 +4,15 @@
 #  Позиции хранятся в файле file.txt в одной строке одно число.
 n = int(input("Введите число: "))
 list = []
-for i in range (-n,n): 
-    list.append (i)
-print (list)
-open ("C:\Users\pnsmi\YandexDisk\Учёба\Python\Homework\file.txt")
+for i in range(-n, n):
+    list.append(i)
+print(list)
+a = open('file.txt', 'w')
+a.write((input("Введите первую позицию: ")))
+a.write("\n")
+a.write(input("Введите вторую позицию: "))
+a.close()
+a = open('file.txt', 'r')
+print("Число на первой позиции: ", (list[int (a.read (1))]))
+print("Число на второй позиции: ", (list[int (a.read (3))]))
+a.close()

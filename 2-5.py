@@ -1,12 +1,13 @@
 # Реализуйте алгоритм перемешивания списка.
-from random import Random, random
-
-
-list_lenght = int (input ("Введите длину списка: "))
-list = []
-result = []
-for i in range (list_lenght):
-    list.append (input ("Введите элемент списка: "))
-print (list)
-Random.sample (list, result)
-print (result)
+from random import randint
+a_lenght = int(input("Введите длину списка: "))
+a = []
+for i in range(a_lenght):
+    a.append(int(input("Введите элемент списка: ")))
+    x = 5
+print(a)
+for i in range(0, len(a)):
+    j = randint(0, len(a) - 1)
+    print(j)
+    a[i], a[j] = a[j], a[i]
+print(a)
