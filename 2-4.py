@@ -18,3 +18,4 @@ a = open('file.txt', 'r')
 print(list[int(a.read(1))] * list[int(a.read(3))])
 a.close()
 os.remove("file.txt")
+
