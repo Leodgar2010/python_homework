@@ -5,7 +5,6 @@ a_lenght = int(input("Введите длину списка: "))
 a = []
 for i in range(a_lenght):
     a.append(int(input("Введите элемент списка: ")))
-    x = 5
 print(a)
 for i in range(0, len(a)):
     j = randint(0, len(a) - 1)
