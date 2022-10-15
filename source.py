@@ -1,9 +1,8 @@
-def create_list_int():
-    a_lenght = int(input("Введите длину списка: "))
-    a = []
-    for i in range(a_lenght):
-        a.append(int(input("Введите элемент списка: ")))
-    return (a)
+# def create_list_int():
+#     a_lenght = int(input("Введите длину списка: "))
+#     a = []
+#     a = [i for i in range(a_lenght):a.append(int(input("Введите элемент списка: "))]
+#     return (a)
 
 
 def create_list_float():
@@ -42,14 +41,9 @@ def create_polinom (power, coeff_lenght):
                 result = result +'+'+ (f"{lst[i]}")
     return (result)
 def create_polinom_sum_from_file(file1, file2, sum_file):
-    text = open(file1, 'r')
-    a = text.readline()
-    text.close()
-    text = open(file2, 'r')
-    b = text.readline()
-    text.close()
+    a = (open(file1, 'r').readline())
+    b = (open(file2, 'r').readline())
     alst = a.split('+')
-    print(alst)
     blst = b.split('+')
     clst = []
     temp = []
