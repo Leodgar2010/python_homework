@@ -18,5 +18,5 @@ def form_index_txt(lst):
 def form_index_csv(lst):
     import csv
     with open("index.csv", mode="a",encoding='windows-1251') as file:
-        file_writer = csv.writer(file, delimiter=",", lineterminator="\r")
+        file_writer = csv.writer(file, delimiter=";", lineterminator="\r")
         file_writer.writerow([lst[0], lst[1], lst[2], lst[3]])
